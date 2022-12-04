@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+</head>
+<body>
+    <header>  
+        <article class="left" id="highscore">View Highscores</article>
+        <article class="middle" id="spacer"></article>
+        <article class="right" id="timer">Time: 75</article>
+    </header>
+    <main>
+        <h2 class="heading" id="heading">Coding Quiz Challenge</h2>
+        <p class="p" id="para">Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <button class="startbutton button" id="start-button">Start Quiz</button>
+        <ul class="hidden" id="quizarea">
+            <li><button class="button quiz-button" data-value="1" id="b1"></button></li>
+            <li><button class="button quiz-button" data-value="2" id="b2"></button></li>
+            <li><button class="button quiz-button" data-value="3" id="b3"></button></li>
+            <li><button class="button quiz-button" data-value="4" id="b4"></button></li>
+        </ul>
+        <form class="hidden" id="initials">
+            <span>Enter intials:  
+                <input type="text" id="init">
+                <input type="submit" class="button">
+            </span>
+        </form>
+        <ul >
+            <li class="hidden" id="result"></li>
+        </ul>
+    </main>
+
+    <script src="./assets/scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+
+/* Global Section */
+/* .hidden will be used througout the app to hide elements */
+.hidden {
+    display: none;
+}
+
+/* All buttons will be styled the same */
+.button {
+    background-color: rgb(14, 14, 68);
+    border-radius: 15%;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: .5%;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(66, 66, 69);
+}
+
+/* Header Section */
+/* The header includes the high scores link and the timer */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+header article {
+    flex: 1 0 33%;
+}
+
+.left {
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.middle{
+    width: 20%
+}
+
+/* Quiz Area*/
+
+.heading {
+    width: 40%;
+    margin: 1% 1% 0% 20%;
+    padding-top: 4%;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.heading-left {
+    width: 40%;
+    margin: 1% 1% 0% 22%;
+    padding-top: 4%;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+}
+
+.p {
+    margin: 1% 0% 0% 20%;
+    padding: 1%;
+    text-align: center;
+    width: 40%;
+}
+
+.p-left {
+    margin: 1% 0% 0% 21%;
+    padding: 1%;
+    text-align: left;
+    width: 40%;
+}
+
+.startbutton {
+    margin: 1% 0% 0% 36%;
+}
+
+.quizarea {
+    margin: 1% 0% 0% 22%;
+}
+
+.quiz-button {
+    margin: 1px;
+}
+
+/* result area */
+.result {
+    border-top: 1px solid grey;
+    margin: 1% 0% 0% 22%;
+    width: 40%;
+    padding: 10px;
+    font-style: italic;
+}
+
+.horizontal {
+    width: 40%;
+    margin: 1% 0% 0% 22%;
+}
+.horizontal li{
+    display: inline;
+    margin: 5px;
+}
+
+/* Form Area */
+.form { 
+    width: 40%;
+    margin: 1% 0% 0% 22%;
+}
+
+
+/* High Score Area */
+.custom-list{
+    list-style: decimal;
+    text-align: left;
+    width: 14%;
+    margin: 1% 0% 1% 23%;
+}
+
+.custom-list li {
+    padding: 1px;
+}
+
+.custom-list li:nth-child(odd) {
+    background: rgb(190, 190, 243); 
+}
+
+.highscore-setup {
+    margin: 5% 2% 0% 0%;
+}
+
+/* Add breakpoints */
+
+@media screen and (max-width: 504px) {
+.startbutton {
+    margin: 1% 0% 0% 27%;
+}
+
+.heading {
+    font-size: 25px;
+    width: 80%;
+    margin: 1% 1% 0% 10%;
+}
+
+.horizontal{
+    width: 60%;
+    margin: 1% 0% 0% 18%;
+}
+
+.form { 
+    /* width: 40%; */
+    margin: 1% 0% 0% 10%;
+}
+
+.p-left {
+    margin: 1% 0% 0% 10%;
+    /* padding: 1%;
+    text-align: left;
+    width: 40%; */
+}
+
+.result {
+    margin: 1% 0% 0% 10%;
+}
+
+.custom-list{
+    width: 24%;
+    margin: 1% 0% 1% 10%;
+}
+
+}
